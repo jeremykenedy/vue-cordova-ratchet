@@ -1,4 +1,4 @@
-# vue-cordova 
+# vue-cordova-ratchet
 A Template created with vue cli and vue-cordova.
 
 ## Project setup
@@ -66,3 +66,4 @@ npm run cordova-build-only-www-electron # Build only files to src-cordova
 * [Vue CLI Config](https://cli.vuejs.org/config/)
 * [Vue CLI Cordova Plugin](https://github.com/m0dch3n/vue-cli-plugin-cordova)
 * [Cordova Command-line Interface](https://cordova.apache.org/docs/en/2.9.0/guide/cli/)
+* [Google Ratchet UI](http://goratchet.com/)
