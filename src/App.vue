@@ -1,18 +1,21 @@
 <template>
   <div>
+    <AppHeader />
     <AppNav />
     <router-view />
   </div>
 </template>
 
 <script>
-import AppNav from '@/components/Common/AppNav';
-import AppToast from '@/components/Common/AppToast';
+import AppHeader from '@/views/components/common/AppHeader';
+import AppNav from '@/views/components/common/AppNav';
+// import AppToast from '@/components/common/AppToast';
 
 export default {
   components: {
+    AppHeader,
     AppNav,
-    AppToast,
+    // AppToast,
   }
 }
 </script>

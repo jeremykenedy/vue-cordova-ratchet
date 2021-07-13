@@ -1,18 +1,39 @@
+const CopyPlugin = require('copy-webpack-plugin');
+const path = require('path');
+
 module.exports = {
-    lintOnSave: true,
+  lintOnSave: false,
+  // devServer: {
+  //   host: '0.0.0.0',
+  //   https: false,
+  //   disableHostCheck: true,
+  //   watchOptions: {
+  //     poll: true
+  //   },
+  //   public: 'vue-cordova.local'
+  // }
+  pluginOptions: {
+    cordovaPath: 'src-cordova'
+  },
+  publicPath: '',
+  chainWebpack: config => {
+    // config.plugins.delete('html')
+    config.plugins.delete('preload')
+    config.plugins.delete('prefetch')
+  },
+  configureWebpack: () => {
+    return {
+      plugins: [
+        new CopyPlugin([
+            {
+              from: "src/assets/public/img",
+              to: "img",
+              ignore: ['.DS_Store']
+            }
+          ]
+        ),
+      ],
+    }
+  }
 
-    // devServer: {
-    //   host: '0.0.0.0',
-    //   https: false,
-    //   disableHostCheck: true,
-    //   watchOptions: {
-    //     poll: true
-    //   },
-    //   public: 'vue-cordova.local'
-    // }
-    pluginOptions: {
-        cordovaPath: 'src-cordova'
-    },
-
-    publicPath: ''
 }

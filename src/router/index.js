@@ -1,9 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import store from '@/store'
 
-import Home from '../views/Home.vue'
-import Login from '../views/Auth/Login.vue'
-import Register from '../views/Auth/Register.vue'
+import Welcome from '../views/pages/Welcome.vue'
+import Home from '../views/pages/Home.vue'
+import About from '../views/pages/About.vue'
+import Login from '../views/pages/Auth/Login.vue'
+import Register from '../views/pages/Auth/Register.vue'
+
+import Profile from '../views/pages/Profile.vue'
+import Account from '../views/pages/Account.vue'
+import Settings from '../views/pages/Settings.vue'
 
 import middlewarePipeline from './middlewarePipeline'
 import auth from '@/middleware/auth'
@@ -13,8 +19,21 @@ import guest from '@/middleware/guest'
 const routes = [
   {
     path: '/',
+    name: 'welcome',
+    component: Welcome,
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: About,
+  },
+  {
+    path: '/home',
     name: 'home',
     component: Home,
+    // meta: {
+    //   middleware: [auth]
+    // }
   },
   {
     path: '/login',
@@ -32,6 +51,34 @@ const routes = [
       middleware: [guest]
     }
   },
+
+  {
+    path: '/profile',
+    name: 'profile',
+    component: Profile,
+    // meta: {
+    //   middleware: [auth]
+    // }
+  },
+  {
+    path: '/account',
+    name: 'account',
+    component: Account,
+    // meta: {
+    //   middleware: [auth]
+    // }
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    component: Settings,
+    // meta: {
+    //   middleware: [auth]
+    // }
+  },
+
+
+
 ];
 
 const router = createRouter({

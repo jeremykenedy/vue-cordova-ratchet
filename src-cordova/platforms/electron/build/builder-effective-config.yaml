@@ -1,0 +1,19 @@
+directories:
+  output: /Users/jeremykenedy/sites/vue-cordova-ratchet/src-cordova/platforms/electron/build
+  buildResources: /Users/jeremykenedy/sites/vue-cordova-ratchet/src-cordova/platforms/electron/build-res
+  app: /Users/jeremykenedy/sites/vue-cordova-ratchet/src-cordova/platforms/electron/www
+appId: com.example.hello
+productName: Vue Cordova
+electronVersion: 4.0.1
+electronDownload:
+  version: 4.0.1
+mac:
+  type: distribution
+  icon: installer.png
+  target:
+    - target: dmg
+      arch:
+        - x64
+    - target: zip
+      arch:
+        - x64
