@@ -5,7 +5,8 @@ import store from '@/store';
 import axios from 'axios';
 import VueSweetalert2 from 'vue-sweetalert2';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-require('goratchet/dist/js/ratchet.js');
+
+// require('goratchet/dist/js/ratchet.js');
 
 import AppButton from '@/views/components/common/AppButton';
 

@@ -1,18 +1,16 @@
 <template>
-  <div
-    class="content welcome-content"
-  >
+  <div class="content welcome-content">
     <div class="welcome-container">
       <p class="welcome-text">
         Welcome
       </p>
       <p class="text-center">
-        <button
-          class="btn btn-block btn-info btn-pill"
-          @click.prevent="navTo('about')"
-        >
-          About <span class="icon icon-info"></span>
-        </button>
+        <AppButton
+          class="btn-block btn-pill"
+          text="About"
+          icon-after="icon icon-info"
+          @click="navTo('about')"
+        />
       </p>
     </div>
   </div>
@@ -21,7 +19,7 @@
 <script>
 
 export default {
-  name: 'Blank',
+  name: 'Welcome',
   components: {},
   props: {},
   data () {

@@ -14,6 +14,7 @@
           <a
             class="push-right"
             href="http://goratchet.com"
+            target="_blank"
           >
             <strong>Ratchet documentation</strong>
           </a>
@@ -22,6 +23,7 @@
           <a
             class="push-right"
             href="https://github.com/twbs/ratchet/"
+            target="_blank"
           >
             <strong>Ratchet on Github</strong>
           </a>
@@ -30,6 +32,7 @@
           <a
             class="push-right"
             href="https://groups.google.com/forum/#!forum/goratchet"
+            target="_blank"
           >
             <strong>Ratchet Google group</strong>
           </a>
@@ -38,6 +41,7 @@
           <a
             class="push-right"
             href="https://twitter.com/goratchet"
+            target="_blank"
           >
             <strong>Ratchet on Twitter</strong>
           </a>
