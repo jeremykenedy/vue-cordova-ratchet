@@ -1,0 +1,78 @@
+# Add 'repo' label to any root file changes
+repo:
+  - '*'
+
+workflow:
+  - any: ['.github/**/*.*']
+
+build:
+  - any:
+      [
+        '*.js',
+        '*.yml',
+        '*.json',
+        '*.ts',
+        '*.xml',
+        '*.travis',
+        '.browserslistrc',
+        '.editorconfig',
+        '.eslintrc.js',
+        'babel.config.js',
+        'package.json',
+        'postcss.config.js',
+        'vue.config.js',
+      ]
+
+cordova-builds:
+  - any: ['src-cordova/**/*.*']
+
+cordova-ios-build:
+  - any: ['src-cordova/platforms/ios/**/*.*']
+
+cordova-android-build:
+  - any: ['src-cordova/platforms/android/**/*.*']
+
+cordova-browser-build:
+  - any: ['src-cordova/platforms/browser/**/*.*']
+
+cordova-electron-build:
+  - any: ['src-cordova/platforms/electron/**/*.*']
+
+cordova-osx-build:
+  - any: ['src-cordova/platforms/osx/**/*.*']
+
+documentation:
+  - any: ['*.md']
+
+env-file:
+  - any: ['.env.example']
+
+vue-routing:
+  - any: ['src/router/**/*.js']
+
+vue-store:
+  - any: ['src/store/**/*.js']
+
+vue-middleware:
+  - any: ['src/middleware/**/*.js']
+
+vue-core:
+  - any: ['main.js', 'App.vue']
+
+vue-views:
+  - any: ['src/views/**/*.vue']
+
+vue-components:
+  - any: ['src/views/components/**/*.vue']
+
+vue-pages:
+  - any: ['src/views/pages/**/*.vue']
+
+images:
+  - any: ['src/assets/public/img/**/*.*']
+
+css:
+  - any: ['src/assets/styles/**/*.css']
+
+entry-point:
+  - any: ['src/assets/public/index.html']
