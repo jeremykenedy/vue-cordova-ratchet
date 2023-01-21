@@ -1,5 +1,5 @@
 # vue-cordova-ratchet
-A Template created with vue cli and vue-cordova.
+A Template created with vue cli and vue-cordova. This will compile using to IOS, Android, Electron, and OSX native all from the cli out the box!
 
 ## Project setup
 ```sh
