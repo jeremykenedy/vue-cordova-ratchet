@@ -21,16 +21,6 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
-```sh
-npm run test:unit
-```
-
-### Lints and fixes files
-```sh
-npm run lint
-```
-
 ## Vue Cordova Plugin Usage
 Prepare
 ```sh
