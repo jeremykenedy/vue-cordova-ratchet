@@ -24,16 +24,20 @@ module.exports = {
   configureWebpack: () => {
     return {
       plugins: [
-        new CopyPlugin([
+        new CopyPlugin({
+          patterns: [
             {
               from: "src/assets/public/img",
               to: "img",
-              ignore: ['.DS_Store']
-            }
-          ]
-        ),
+              globOptions: {
+                dot: true,
+                gitignore: true,
+                ignore: ['.DS_Store'],
+              },
+            },
+          ],
+        }),
       ],
     }
   }
-
 }

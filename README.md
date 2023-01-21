@@ -3,8 +3,13 @@ A Template created with vue cli and vue-cordova.
 
 ## Project setup
 ```sh
+git clone git@github.com:jeremykenedy/vue-cordova-ratchet.git vue-cordova-ratchet
+cd vue-cordova-ratchet/
+cp .env.example .env
 npm install
 ```
+
+* Configure your `.env` file.
 
 ### Compiles and hot-reloads for development
 ```sh
